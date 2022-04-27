@@ -20,21 +20,29 @@ pnpm add @flingyp/tools --save
 
 <script>
     // YTools 已经被注册到 Window 中，可直接使用
+    YTools._string.SensitiveStringHandle('12345678901', 4, 5)
 </script>
 ```
 
 ### esmodule
 
 ```javascript
-import * as YTools from '@flingyp/tools'
-// or
-import {} from '@flingyp/tools'
+import { _string } from '@flingyp/tools'
+_string.SensitiveStringHandle('12345678901', 4, 5)
 ```
 
 ### commonjs
 
 ```javascript
-const YTools = require('@flingyp/tools')
-// or
-const {} = require('@flingyp/tools')
+const { _string } = require('@flingyp/tools')
+_string.SensitiveStringHandle('12345678901', 4, 5)
 ```
+
+## 代办事项
+
+- [ ] 字符串
+  - [x] 字符串敏感信息的处理
+- [ ] 数字
+  - [ ] 生成随机数
+- [ ] 时间
+  - [ ] 根据根据生成当前日期/时间

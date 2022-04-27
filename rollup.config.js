@@ -6,16 +6,19 @@ export default {
   output: [
     {
       file: 'dist/ytools.umd.js',
-      format: 'umd',
+      format: 'iife',
       name: 'YTools',
+      exports: 'named',
     },
     {
       file: 'dist/ytools.esm.js',
       format: 'esm',
+      exports: 'named',
     },
     {
       file: 'dist/ytools.cjs.js',
       format: 'cjs',
+      exports: 'named',
     },
   ],
   plugins: [
