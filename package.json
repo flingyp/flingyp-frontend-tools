@@ -1,0 +1,25 @@
+{
+  "name": "@flingyp/tools",
+  "version": "1.0.0",
+  "description": "Integrate a collection of common tools and methods",
+  "main": "index.ts",
+  "scripts": {},
+  "homepage": "https://github.com/flingyp/flingyp-frontend-tools#readme",
+  "bugs": {
+    "url": "https://github.com/flingyp/flingyp-frontend-tools/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flingyp/flingyp-frontend-tools.git"
+  },
+  "author": {
+    "name": "FlingYP",
+    "url": "https://github.com/flingyp"
+  },
+  "keywords": [
+    "typescript",
+    "library",
+    "tool"
+  ],
+  "license": "MIT"
+}
