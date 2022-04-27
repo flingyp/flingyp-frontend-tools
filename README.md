@@ -1,5 +1,5 @@
 <div align="center">
-    <img width="350px" height="300px" src="config/imgs/tool-logo.png" />
+    <img width="350px" height="300px" src="https://gitee.com/xiaopeng77/typora-img/raw/master/img/tool-logo.png" />
     <h2>@flingyp/tools</h2>
 </div>
 
@@ -17,6 +17,7 @@ pnpm install @flingyp/tools --save
 
 ```javascript
 <script src="@flingyp/tools/xxx.js"></script>
+
 <script>
     // YTools 已经被注册到 Window 中，可直接使用
 </script>
@@ -37,3 +38,4 @@ const YTools = require("@flingyp/tools");
 // or
 const {} = require("@flingyp/tools");
 ```
+
