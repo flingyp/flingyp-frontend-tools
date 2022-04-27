@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://gitee.com/xiaopeng77/typora-img/raw/master/img/Tools.png" style="zoom:100%;" />
+    <img src="https://gitee.com/xiaopeng77/typora-img/raw/master/img/Tools.png" style="zoom:100%;"></img>
     <h1>@flingyp/tools</h1>
 </div>
 
@@ -10,7 +10,7 @@
 ## 安装和快速上手
 
 ```sh
-pnpm install @flingyp/tools --save
+pnpm add @flingyp/tools --save
 ```
 
 ### browser
@@ -26,16 +26,15 @@ pnpm install @flingyp/tools --save
 ### esmodule
 
 ```javascript
-import * as YTools from "@flingyp/tools";
+import * as YTools from '@flingyp/tools'
 // or
-import {} from "@flingyp/tools";
+import {} from '@flingyp/tools'
 ```
 
 ### commonjs
 
 ```javascript
-const YTools = require("@flingyp/tools");
+const YTools = require('@flingyp/tools')
 // or
-const {} = require("@flingyp/tools");
+const {} = require('@flingyp/tools')
 ```
-
