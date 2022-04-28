@@ -1,3 +1,5 @@
 import _string from './_string/index'
 
-export { _string }
+import _date from './_date/index'
+
+export { _string, _date }

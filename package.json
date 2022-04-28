@@ -9,10 +9,11 @@
     "dist"
   ],
   "scripts": {
+    "serve": "tsc && rollup --watch --config",
+    "build": "tsc && rollup --config",
     "lint:check": "eslint --ext .js,.ts --ignore-path .gitignore src/**/*",
     "lint:fix": "eslint --fix --ext .js,.ts --ignore-path .gitignore src/**/*",
     "prettier": "prettier --write .",
-    "build": "tsc && rollup --config",
     "commit": "git-cz",
     "test": "jest"
   },

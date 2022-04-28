@@ -36,6 +36,9 @@ _string.SensitiveStringHandle('12345678901', 4, 5)
 ```javascript
 const { _string } = require('@flingyp/tools')
 _string.SensitiveStringHandle('12345678901', 4, 5)
+// or
+const YTools = require('@flingyp/tools')
+YTools._string.SensitiveStringHandle('12345678901', 4, 5)
 ```
 
 ## 代办事项
@@ -45,4 +48,4 @@ _string.SensitiveStringHandle('12345678901', 4, 5)
 - [ ] 数字
   - [ ] 生成随机数
 - [ ] 时间
-  - [ ] 根据根据生成当前日期/时间
+  - [ ] 根据日期/时间-输出对应格式的日期
