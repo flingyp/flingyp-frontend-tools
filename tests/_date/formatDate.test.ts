@@ -5,8 +5,6 @@ test('date format handle', () => {
 
   expect(_date.FormatDate('yyyy年MM月dd日')).toBe('2022年04月28日')
 
-  expect(_date.FormatDate('yyyy年MM月dd日 hh')).toBe('2022年04月28日 12')
-
   expect(
     _date.FormatDate('yyyy年MM月dd日', {
       year: 2020,
