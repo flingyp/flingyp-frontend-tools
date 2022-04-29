@@ -1,7 +1,11 @@
 import { _string } from '../../src/index'
 
 test('sensitive string handle', () => {
-  expect(_string.SensitiveStringHandle('13698081137')).toBe('13698081137')
+  expect(_string.SensitiveStringHandle('13698081137')).toBe('136*****137')
+
+  expect(_string.SensitiveStringHandle('45062519290608115x')).toBe(
+    '45062*********115x'
+  )
 
   expect(_string.SensitiveStringHandle('13698081137', 4, 20)).toBe(
     '1369*******'

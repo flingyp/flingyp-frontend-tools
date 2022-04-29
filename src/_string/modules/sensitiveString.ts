@@ -13,11 +13,16 @@ const SensitiveStringHandle = (
   sign: string = '*'
 ): string => {
   let _handleStr = handleStr
+  const handleStrLength = handleStr.length
+  const strHalfLength = Math.floor(handleStrLength / 2)
+  if (startIndex === 0) {
+    startIndex = strHalfLength - Math.floor(strHalfLength / 2)
+  }
   if (startIndex > _handleStr.length || startIndex < 0) {
     startIndex = 0
   }
   if (handleNumber === 0) {
-    return _handleStr
+    handleNumber = strHalfLength
   }
   // 脱敏符号的字符串
   let signStr = ''
