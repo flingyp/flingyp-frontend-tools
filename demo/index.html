@@ -7,11 +7,46 @@
     <title>Document</title>
   </head>
   <body>
+    <div style="height: 10000px"></div>
     <script src="../dist/ytools.umd.js"></script>
     <script>
+      console.log(YTools)
       console.log(YTools._string.RandomNumberStr())
       console.log(YTools._string.RandomStr())
       console.log(YTools._date.FormatDate())
+
+      const obj = { test: 5 }
+      const obj2 = obj
+      console.log(
+        YTools._array.DelRepeatArray([
+          4,
+          6,
+          obj,
+          123,
+          'Hello',
+          'Hello World',
+          'Hello',
+          obj2,
+        ])
+      )
+
+      // 防抖函数
+      // const throttleScroll = YTools._function.Throttle(() => {
+      //   const scrollTop =
+      //     document.body.scrollTop || document.documentElement.scrollTop
+
+      //   console.log('滚动条的位置：' + scrollTop)
+      // })
+
+      // 节流函数
+      // const throttleScroll = YTools._function.Debounce(() => {
+      //   const scrollTop =
+      //     document.body.scrollTop || document.documentElement.scrollTop
+
+      //   console.log('滚动条的位置：' + scrollTop)
+      // })
+
+      // window.onscroll = throttleScroll
     </script>
   </body>
 </html>

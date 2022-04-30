@@ -56,3 +56,8 @@ YTools._string.SensitiveStringHandle('12345678901', 4, 5)
   - [x] QQ 号校验
   - [x] 校验字符串中是否包含中文
   - [x] 校验字符串中是否包含数字
+- [ ] 函数
+  - [x] 节流函数 Throttle
+  - [x] 防抖函数 Debounce
+- [ ] 数组
+  - [x] 数组去重 DelRepeat
