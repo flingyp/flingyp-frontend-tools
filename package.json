@@ -1,9 +1,10 @@
 {
   "name": "@flingyp/tools",
-  "version": "1.1.0",
+  "version": "1.1.3",
   "description": "Integrate a collection of common tools and methods",
   "main": "./dist/ytools.cjs.js",
   "module": "./dist/ytools.esm.js",
+  "browser": "./dist/ytools.umd.js",
   "types": "./dist/@types/index.d.ts",
   "files": [
     "dist"
@@ -15,7 +16,8 @@
     "lint:fix": "eslint --fix --ext .js,.ts --ignore-path .gitignore src/**/*",
     "prettier": "prettier --write .",
     "commit": "git-cz",
-    "test": "jest"
+    "test": "jest",
+    "release": "node script/publish.js"
   },
   "homepage": "https://github.com/flingyp/flingyp-frontend-tools#readme",
   "bugs": {
@@ -47,6 +49,7 @@
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",
     "babel-jest": "^28.0.2",
+    "commander": "^9.2.0",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.32.0",
@@ -54,11 +57,13 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.2",
     "husky": "^7.0.4",
+    "inquirer": "^8.2.4",
     "jest": "^27.4.5",
     "lint-staged": "^12.4.1",
     "prettier": "2.6.2",
     "rollup": "^2.70.2",
     "rollup-plugin-terser": "^7.0.2",
+    "shelljs": "^0.8.5",
     "typescript": "^4.6.3"
   },
   "lint-staged": {
